@@ -1,0 +1,351 @@
+@charset "UTF-8";
+* {
+  font-family: 'helvetica', arial; }
+
+/* Cambios HOME */
+
+/* Banner IZQUIERDA Formulario*/
+#ver_seguros {
+	width: 28%; /* 300px */
+	float: left;
+	background-color: #029EE3;
+	height: 320px;
+}
+#ver_seguros h3  {
+	font-size:24px;
+	line-height:24px;
+	margin-left:18%;
+	margin-right:15%;
+	color:#FFF;
+}
+#ver_seguros h3 strong {
+	font-size:34px;
+	line-height:30px;
+}
+.btn_contratar {
+	width: 70%;
+    padding: 10px;
+    border: none;
+    margin-left: 15%;
+    font-size: 16px;
+}
+fieldset {
+	border:0px;
+}
+.panel-body{
+	padding: 0px;
+}
+.form-group {
+	margin-bottom:0px;	
+}
+.form-control {
+	display: block;
+	width: 70%;
+	height: 34px;
+	margin-top: 10px;
+	padding: 6px 12px;
+	margin-left: 15%;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #666666;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+/* SECCION Banner NO SOY ROBOT */
+.robot {
+	margin-top: 10px;
+	margin-left: 15%;
+transform: scale(0.80); transform-origin: left top;
+}
+/* FIN SECCION Banner ROBOT */
+
+/* FIN Banner IZQUIERDA Formulario */
+
+/* BANNER IMAGEN HOME */
+#banner_campanas {
+	width:72%;
+	height:320px;
+	float:left;
+}
+#banner_home {
+	width:100%;
+	height:320px;
+	margin-top:20px;
+}
+.slides .bajada_banner, .slides p, .titulo_banner {
+
+	margin: 0 5 10px !important;
+}
+/* FIN BANNER IMGAEN HOME */
+
+/* SECCION 4 PROMOS */
+.col_Promo {
+	vertical-align: top;
+	width:18%; /* 300px */
+	 display:inline-block;
+	margin-left:3%;/*10px*/
+	margin-right:3%;/*10px*/
+}
+#contenido_promo {
+	width:80%;
+	margin:0 auto;
+	overflow:hidden;
+	/*padding-top:30px;*/
+	padding-bottom:10px;
+	text-align:center;
+	background-color:#EEEEEE;
+}
+#contenido_container_DESK{
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	padding-top:10px;
+	text-align:center;
+	background-color:#EEEEEE;
+}
+#contenido_container_RESP{
+	width:100%;
+	margin:0 auto;
+	
+	padding-top:10px;
+	text-align:center;
+	background-color:#EEEEEE;
+}
+#contenido_container{
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
+	padding-top:30px;
+	text-align:center;
+	background-color:#EEEEEE;
+	float:right;
+}
+#contenido .col_2 {
+	padding-bottom:10px;
+}
+
+#contenido_promo #destacado {
+	width:100%;
+	height:auto;
+	border:1px solid #EEEEEE;
+}
+#contenido_promo .col_Promo p {
+	font-size:24px;
+	font-weight:400;
+	color:#FB802F;
+	margin-top:15px;
+	margin-bottom:15px;
+	line-height: 0;
+}
+.icon-ico-auto, .icon-ico-camioneta,.icon-ico-moto,.icon-ico-carro {
+	
+	font-size:80px;
+	color:#029EE3;
+	line-height: 0; 
+	vertical-align: top;
+	text-transform:uppercase;	
+}
+#contenido_promo h3 {
+	font-weight:normal;
+	font-size:12px;
+	color:#666666;
+	margin-top:1px;
+	text-transform:uppercase;
+}
+.col_2 .btn_contenido {
+	color:#666666 !important;
+	font-size:12px !important;
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 10px 10px;
+}
+.btn_contenido_promo {
+	display:inline-block;
+}
+#btn_cont {
+	text-align:center;
+}
+.naranjo {
+	color:#FFFFFF !important;
+	background-color:#FB802F;
+}
+#contenido_promo a:hover .btn_contenido_promo {
+	color:#FFFFFF !important;
+	background-color:#019EE3 !important;
+	border:1px solid #019EE3 !important;
+}
+/* SECCION 4 PROMOS */
+
+/* MODIFICAR DATOS Y TELEFONO */
+.icon-ico-edit, .icon-ico-movil {
+	font-size:40px;
+	color:#666;
+	line-height: 0; 
+	margin-right: 10px;
+	padding-top:5px;
+	text-transform:uppercase;	
+}
+#emergencia_sc {
+	width: 100%;
+	display:inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 18px;		
+}
+#numero_emergencia_sc_L, #numero_emergencia_sc_R {
+	display:inline-block;
+	width: 350px;
+	height: 45px;
+   	margin-top: 10px; 
+	margin-bottom: 10px; 
+}
+#emergencia_sc p {
+	display: inline-block
+}
+#emergencia_sc a p {
+	text-decoration:none;
+	color:#666;
+}
+/* FIN MODIFICAR DATOS Y TELEFONO */
+
+/*CSS RESPONSIVE NUEVO HOME SOAP*/
+@media (min-width: 0px) and (max-width:538px) { 
+
+#contenido_container_DESK {
+	visibility: hidden;
+	margin-bottom: -280px;
+		}
+.icon-ico-auto, .icon-ico-camioneta,.icon-ico-moto,.icon-ico-carro {
+	font-size:60px;
+	color:#029EE3;
+	line-height: 0; 
+	text-transform:uppercase;
+	 }
+	 #contenido_promo .col_Promo p {
+	font-size:18px;
+	font-weight:400;
+	color:#FB802F;
+	margin-top:15px;
+	margin-bottom:15px;
+	}
+	
+	#contenido_promo  {
+	width:100%;
+	}
+
+
+	
+	#contenido_promo h3 {
+	font-weight:normal;
+	font-size:10px;
+	color:#666666;
+
+	text-transform:uppercase;
+}
+
+	.col_Promo {
+	vertical-align: top;
+	width:18%; /* 300px */
+	display:inline-block;
+	margin-left:2%;/*10px*/
+	margin-right:2%;/*10px*/
+	}
+
+	
+}	
+
+@media (min-width: 539px){ 
+#contenido_container_RESP {
+	display:none;
+	}
+}
+@media (max-width: 718px){ 
+	.home .login.error::after{
+		right:18%;
+	}
+	.home .login.errorPatentePagada::after {
+		right:18%;
+	}
+	.home .login.errorValidaRut::after{
+		right:18%;
+	}
+	.home .login.errorSinPatentes::after {
+		right:18%;
+	}
+}
+@media (min-width:718px) and (max-width:1099px) { 
+	.home .login.error::after{
+		top: 236px;
+	}
+	.home .login.errorPatentePagada::after {
+		top: 236px;
+	}
+	.home .login.errorValidaRut::after{
+		top: 236px;
+	}
+	.home .login.errorSinPatentes::after {
+		top: 236px;
+	}
+.form-control_radio {
+	font-size: 10px;		
+}
+	#ver_seguros h3 strong {
+	font-size:24px;
+	line-height:24px;
+	
+}
+	#ver_seguros h3  {
+	font-size:18px;
+	line-height:24px;
+}
+	.robot {
+	margin-left: 15%;
+	transform: scale(0.60); 
+	transform-origin: left top;
+		}
+	
+.icon-ico-auto, .icon-ico-camioneta,.icon-ico-moto,.icon-ico-carro {
+	font-size:60px;
+	color:#029EE3;
+	line-height: 0; 
+	text-transform:uppercase;
+	}
+}
+
+a:hover {
+text-decoration:none;
+}
+
+#poliza_BTN a {
+	color: #029ee3!important;
+	font-weight: bold;
+}
+
+#Puntos {
+    font-size: 12px;
+    color: #666;
+    font-weight: 300;
+    line-height: 1;
+    display: inline-block;
+}
+
+
+ /*CSS RESPONSIVE FIN NUEVO HOME SOAP*/
+/* FIN Cambios HOME */
+
+
+
+
+
+
+

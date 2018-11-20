@@ -1,0 +1,909 @@
+/* Large devices (large desktops, 1200px and up) */
+
+@media (max-width: 1300px) { 
+
+	/*home*/
+	.principal .lista-vehiculos i {
+	    font-size: 43px; 
+	    margin-bottom: 7px;
+	}
+	.principal .lista-vehiculos p {
+	   margin-bottom: 0px;
+	}
+	.principal .lista-vehiculos li { 
+	    width: 106px;
+	    padding: 0 5px;
+	}
+	.principal .lista-vehiculos li:first-child,
+	.principal .lista-vehiculos li:last-child { 
+	    width: 110px;
+	     padding: 0 5px;
+	}
+	.principal .lista-vehiculos strong {
+	    font-size: 18px;
+	}
+	.principal .lista-vehiculos li:last-child { 
+	    width: 120px; 
+	}
+	.principal .lista-vehiculos { 
+	    padding-top: 64px;
+	}
+	.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto { 
+	    bottom: 50px; 
+	}
+
+
+}
+
+@media (max-width: 1200px) { 
+	header .navbar .navbar-nav li a { 
+	    font-size: 12px; 
+	    padding: 0 7px;
+	}
+	header .navbar .bajada h2 {
+	    font-size: 14px; 
+	}
+	.principal .mensaje h3 { 
+	    font-size: 30px;
+	}
+	.principal .mensaje h3 strong {
+   		font-size: 48px;
+   	}
+   	.principal .promocion { 
+	    width: 285px; 
+	    padding: 30px 0px 24px 27px; 
+	}
+	.principal .promocion p {
+	    font-size: 21px;
+	}
+	.principal .promocion .bajada p {
+	    font-size: 18px;
+	}
+	.principal .lista-vehiculos i {
+	    font-size: 43px; 
+	    margin-bottom: 7px;
+	}
+	.principal .lista-vehiculos p {
+	   margin-bottom: 0px;
+	}
+	.principal .lista-vehiculos li { 
+	    width: 106px;
+	    padding: 0 5px;
+	}
+	.principal .lista-vehiculos li:first-child,
+	.principal .lista-vehiculos li:last-child { 
+	    width: 98px;
+	     padding: 0 5px;
+	}
+	.principal .lista-vehiculos strong {
+	    font-size: 18px;
+	}
+	.principal .lista-vehiculos li:last-child { 
+	    width: 120px; 
+	}
+	.principal .lista-vehiculos { 
+	    padding-top: 64px;
+	}
+	.logos img {
+	    margin: 0 19px;
+	}
+
+	/* paso 2*/
+	#pasoDos .btn-agregar { 
+	    padding: 13px 10px;
+	}
+
+	/*foooter */
+	footer .col-pagos {
+	    background: #999999;
+	    padding-top: 15px; 
+	}
+	footer .col-pagos p {
+	    float: none; 
+	    color: #fff;
+	    padding: 0px 10px 10px 0;
+	} 
+	footer .col-pagos img{
+		padding-bottom: 10px;
+	}
+
+	/*error*/
+	#error .box-mensaje p { 
+	    font-size: 21px;
+	}
+	#error .btn-primary {
+	    padding: 15px 32px;
+	    font-size: 16px; 
+	}
+	/*exito*/
+	#exito .box-mensaje p { 
+	    font-size: 20px;
+	}
+	#exito .btn-primary {
+	    padding: 15px 17px;
+	    font-size: 16px; 
+	}
+	#exito .promocion div {
+	    font-size: 21px;
+	}
+	#exito #banner img{
+		width: 100%;
+	}
+	#exito .datos {
+	    width: 334px;
+	}
+	#exito .datos p {
+    	font-size: 14px; 
+    }
+    #exito .datos p strong {
+    	font-size: 28px; 
+    }
+    #exito .info {
+   	 width: 100%;
+   	 padding-left: 0px;
+   	 float: none;
+	}
+	#exito .info a { 
+	    margin-left: 11px;
+	}
+	#faq .central .item p { 
+	    font-size: 15px; 
+	    width: 41%; 
+	    padding-top: 17px; 
+	}
+}
+
+@media (max-width: 1099px) {  
+	
+}
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {  
+	/*header*/
+	header .navbar .navbar-nav { 
+	    padding: 8px 0px;
+	}
+	header .navbar .navbar-nav li {
+	    text-align: right;
+	    float: none;
+	}
+	header .navbar .navbar-nav li span{
+		display: none;
+	}
+	header .navbar .navbar-nav li a {
+	    padding-right: 0px;
+	}
+	footer .col-pagos { 
+	    margin-top: -10px;
+	} 
+	footer .col-links::before { 
+	    width: 1500px; 
+	    z-index: -1;
+	}
+	footer .col-pagos::before { 
+	    width: 1500px; 
+	    z-index: -1;
+	}
+	footer .col-links { 
+	    padding-top: 22px;
+	}
+	footer .col-condiciones {
+	    padding: 20px 0 10px 0;
+	}
+
+	/*home*/
+	.principal .mensaje p{
+		margin-top: 20px;
+		width: 100%;
+	}
+	.bx-wrapper img { height: 441px; width: 990px;	max-width: none;}
+	.principal .mensaje h3{
+		width: 100%;
+	}
+	.principal .mensaje h3 strong{
+		display: inline;
+		font-size: 30px;
+	}
+	.principal .mensaje h3 br{
+		display: none;
+	}
+	.principal .login {
+	    width: 80%;
+	    margin-left: -50%;
+	    left: 60%;
+	    top: 120px;
+	    z-index: 9999;
+	}
+	.principal .login input{
+		height: 45px; 
+	}
+	.principal .lista-vehiculos {
+	    padding-top: 153px;
+	    width: 100%;
+	}
+	.principal .lista-vehiculos li,
+	.principal .lista-vehiculos li:first-child,
+	.principal .lista-vehiculos li:last-child {
+		width: 25%;
+		height: 125px;
+	}
+	.principal .lista-vehiculos i{
+		margin-bottom: 0px;
+	}
+	.principal .lista-vehiculos li:last-child b{
+		line-height: 110%;
+		display: block;
+	}
+	.principal .promocion {
+	    width: 100%;
+	    padding: 15px;
+	    margin-top: 60px;
+	}
+	.principal .promocion b{ display: inline;}
+	.principal .promocion p{
+		text-align: center;
+	}
+	.principal .promocion strong {
+	    font-size: 21px;
+	    padding: 0px;
+	}
+	.principal .promocion::before,
+	.principal .mensaje p::before{
+		width: 0px;
+	}
+	.principal .datos{
+		float: left;
+	}
+	.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+	    bottom: 18px;
+	}
+
+	/*paso 2 */
+	#pasoDos .btn-agregar {
+	    padding: 13px 10px;
+	    font-size: 14px;
+	}
+	#pasoDos .btn-primary {
+	    padding: 13px 10px; 
+	    font-size: 14px; 
+	}
+	#pasoDos .box-resumen .top {
+	    padding: 10px 10px;
+	}
+	#pasoDos .box-resumen .top .item.activo { 
+	    margin: 0 -10px 0 -20px;
+	}
+	#pasoDos .box-resumen .top .item.activo .btn-eliminar {
+	    right: 10px;
+	}
+	#pasoDos .box-resumen .top .item.activo { 
+	    padding-right: 40px;
+	    padding-left: 20px;
+	}
+	#pasoDos .box-resumen .top .item { 
+	    font-size: 12px;
+	}
+	#pasoDos .box-resumen .top .right { 
+	    font-size: 13px;
+	}
+	#pasoDos .box-resumen .top .item.activo .icon-ico-selec { 
+	    top: 12px;
+	    font-size: 10px;
+	}
+	#pasoDos .box-resumen .top .right i,
+	#pasoDos .btn-volver {
+    font-size: 16px;
+    }
+    #pasoDos .campos .error small{
+    	display: none;
+    }
+    #pasoDos .box-resumen .top img {
+	    height: 12px; 
+	    margin: -3px 0 0 10px;
+	}
+
+	/*exito*/
+	#exito .datos{
+		float: left;
+	}
+	#exito .promocion{
+		margin-top: 10px;
+	}
+	#exito .promocionImg{
+	    background: #E27C1E;
+    	margin-top: 10px;
+    }
+	#exito .promocion div {
+	    font-size: 18px;
+	}
+	#exito .promocion span {
+	    font-size: 52px;
+	    line-height: 0%;
+	}
+	#exito .promocion a { 
+	    padding: 10px 0px;
+	}
+	#exito .datos{
+		margin-top: 10px;
+	}
+	#exito .info{
+		padding-top: 4px;
+	}
+	#exito .info a {
+	    margin-left: 63px;
+	}
+	.cnt-pasos { 
+	    padding-bottom: 10px;
+	    margin-bottom: -20px;
+	}
+	.principal{
+		height: auto;
+	}
+	.bx-wrapper{
+		margin-bottom: 0px;
+	}
+	.logos img {
+	    margin: 0 19px;
+	    width: 100px;
+	}
+	#pasoUno .btns .btn-volver{
+		margin-bottom: 10px;
+	}
+	footer .col-links{
+		min-height: auto; 
+		padding-bottom: 22px;
+	}
+
+ }
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+#Linea_Divisoria {     
+border-right: thin solid #ccc;     
+min-height: 100px;  
+}
+
+	 .greend {
+	padding-left:0px !important;
+	}
+	
+	#pasoUno .listas .vehiculo {
+	    font-size: 14px; 
+	padding-top: 21px;
+	    padding-left: 1px;
+	    }
+	/*home*/
+	.principal{
+		height: auto;
+	}
+	.bx-wrapper{
+		margin-bottom: 0px;
+	}
+	.logos {
+	    padding: 10px 0px;
+	}
+	.logos img {
+    margin: 12px 19px;
+    max-width: 19%;
+    /* max-height: 53px; */
+}
+	header .navbar .bajada{
+		display: none;
+	}
+	header .navbar .navbar-brand{
+		margin-left: 20px;
+	}
+	.navbar-toggle {
+	    background: #F2F2F2;
+	    margin-top: 22px;
+	}
+	.navbar-toggle .icon-bar{
+		background: #999999;
+		height: 4px;
+    	width: 24px;
+	}
+	.collapse.in{
+		border: 0px;
+	    width: 100%;
+	    margin: 0; 
+	    z-index: 99999;
+
+	}
+	.navbar .container{
+		padding: 0px;
+	}
+	header .navbar .navbar-nav{
+		    height: 180px;
+		    display: block;
+		    background: #fff;
+		    margin: 0px;
+		    width: 100%; 
+	}
+	header .navbar .navbar-nav ul{
+		padding: 0px;
+	}
+	header .navbar .navbar-nav li{
+		text-align: left;
+		padding: 10px 0px;
+	}
+	header .navbar .navbar-nav li a{
+		font-size: 14px;
+		font-weight: bold;
+		padding: 0 20px;
+		display: block;
+	}
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{  
+		margin: 0px;
+	}
+
+	.principal .login {
+		top: 118px; 
+		width: 90%;
+		left: 54%;
+	}
+	.principal .mensaje h3{
+		padding-left: 0px;
+		font-size: 24px;
+
+	}
+	header .navbar { 
+	    height: 95px;
+	}
+	header .navbar .navbar-brand { 
+	    display: block;
+	    text-indent: -9999px;
+	    overflow: hidden;
+	    width: 135px;
+	    height: 52px;
+	    margin: 20px 0px;
+	    margin-left: 10px;
+	    background-size: 100%;
+	}
+	/*footer*/
+	footer .col-condiciones {
+	    padding: 10px;
+	}
+	footer .col-links {
+	    padding-top: 10px; 	   
+	     padding-bottom: 20px;
+	}
+	.principal .datos{
+		padding-left: 20px;
+	}
+
+	/*error*/
+	#error .box-mensaje{
+		padding: 20px;
+	}
+	#error .box-mensaje p { 
+	    font-size: 18px;
+	}
+	#error .box-mensaje i{
+		display: none;
+	}
+	#error .btn-primary {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+
+	/*exito*/ 
+	#exito .box-mensaje{
+		padding: 20px;
+	}
+	#exito .box-mensaje p { 
+	    font-size: 18px;
+	}
+	#exito .box-mensaje i{
+		display: none;
+	}
+	#exito .btn-primary {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	#exito .btn-primary {
+	    padding: 10px 17px;
+	    font-size: 14px;
+	}
+	#exito .datos {
+	    float: none;
+	    padding: 0px;
+	    width: 100%;
+	    border: 0px;
+	    padding-top: 20px;
+	    margin-bottom: 10px;
+	}
+	#exito .info{
+		margin-top: 0px;
+		text-align: center;
+	}
+	#exito .info h5{ text-align: center; }
+	#exito .info a {
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    display: inline-block;
+	    float: none;
+	    width: 118px;
+	}
+	#banner{
+		padding-top: 20px;
+	}
+	#exito .promocion div {
+    font-size: 15px;
+}
+.campos .error small {
+    margin-right: -24px;
+}
+
+#exito .promocion span{
+	font-size: 30px;
+}
+#exito .promocion div div {
+    padding: 13px 0 6px 0px;
+}
+#exito .promocion a {
+    padding: 10px 0px;
+    font-size: 12px;
+}
+#exito .promocion h5 {
+    font-size: 12px; 
+    padding: 7px 0px; 
+}
+.cnt-pasos{
+	padding-top: 100px;
+	margin-bottom: 0px;
+}
+#exito .info i {
+    font-size: 20px; 
+    width: 45px;
+    height: 45px; 
+    padding-top: 12px; 
+}
+#exito .datos i {
+    font-size: 40px; }
+    #exito .datos br{ display: none; }
+#exito .datos a {
+    font-size: 14px;
+}
+#exito .datos p strong {
+    font-size: 20px;
+}
+#exito .datos p { 
+    line-height: 100%;
+}
+#exito .datos div {
+    height: 38px;
+    margin-bottom: 15px;
+}
+
+/*pasos*/
+
+.pasos {
+    margin: 0 auto;
+    width: 100%;
+}
+.pasos li {
+    display: inline-block;
+    text-align: center;
+    width: 79px;
+    position: relative;
+    font-size: 10px;
+}
+.pasos p {
+    font-size: 12px;
+    color: #666;
+    line-height: 100%;
+    padding-top: 10px;
+}
+.pasos ul::after {
+    content: "";
+    display: block;
+    width: 175px;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    top: 18px;
+    border: 1px solid #CECECE;
+}
+.pasos ul {
+    padding: 0px;
+    position: relative;
+    text-align: center;
+}
+#pasoTres .box-resumen #tabla-resumen td {
+    padding: 7px 4px;
+    position: relative;
+    font-size: 11px;
+
+}
+#pasoTres .box-resumen #tabla-pago td {
+    padding: 10px 5px 10px 15px;
+    font-size: 12px;
+}
+#pasoTres .box-resumen #tabla-pago td:nth-child(5) { 
+	width: 30%;
+	}
+#pasoTres .box-resumen #tabla-pago  p { 
+    width: 63%;
+    padding-top: 0px;
+}
+#pasoTres .box-resumen #tabla-pago img {
+    float: left;
+    width: 50px;
+}
+#pasoTres .box-resumen #tabla-resumen i {
+    color: #E27C1E;
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
+.td-valor{
+	width: 78px;
+}
+#pasoTres .nota {
+    padding: 10px 0 0px 0px;
+    width: 100%;
+}
+#pasoTres .nota p { 
+    font-size: 11px;
+}
+#pasoTres .btn-volver, #pasoTres .btn-agregar, #pasoTres .btn-primary {  
+    padding: 10px 17px;
+    font-size: 14px;
+    width: 100%;
+    margin: 5px 0px;
+    text-align: center;
+    }
+    .extras p{
+    	font-size: 12px;
+    }
+    #pasoTres .box-resumen{
+    	padding: 10px;
+    }
+    #pasoTres h3 { 
+    font-size: 22px;
+    margin: 0px 0px 15px 0;
+}
+.pasos p { 
+    font-weight: bold;
+}
+
+
+/*paso 1*/
+#pasoUno {
+	overflow: hidden;
+}
+#pasoUno .listas li {
+    background: #fff;
+    width: 100%; }
+#pasoUno h3 { 
+    font-size: 22px;
+    margin: 0 0 12px 0;
+}
+#pasoUno .listas p {
+    font-size: 16px; 
+	padding-top: 21px;
+    padding-left: 20px;
+    } 
+#pasoUno .listas p.textoImg {
+    padding-top: 19px;
+    font-size: 12px;
+    margin: -19px;
+}
+
+#pasoUno .listas p.textoImgPuntos {
+    padding-top: 15px;
+    font-size: 12px;
+    margin: -19px;
+    padding-left: 5px;
+}
+
+#pasoUno .listas li img.conTexto {
+    margin-top: 11px;
+    max-height: 23px;
+}
+#pasoUno .listas p.texto {
+    padding-top: 3px;
+    font-size: 11px;
+    margin: -2px;
+}
+#pasoUno .listas p.precioConTexto {
+    padding-top: 14px;
+}
+#pasoUno .listas .btn {
+    padding: 8px 11px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 18px;
+    margin-right: 15px;
+    margin-left: -2px;
+}
+#pasoUno .listas .btn#promo {
+    padding: 8px 6px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#pasoUno .listas div{
+	padding: 0px;
+}
+#pasoUno .listas img{
+	max-width: 100%;
+	max-height: 26px;
+}
+#pasoUno .listas span {
+    font-size: 11px; }
+ #pasoUno .listas li img {
+    margin-top: 21px;
+    margin-left: -6px;
+}
+#pasoUno .listas li img.imgPromo {
+    margin-top: 21px;
+    margin-left: 0px;
+}
+
+/*paso 2*/
+.pagar{
+	    background: #fff;
+    margin: 0 -15px;
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.pagar .btn-orange{
+	float: none!important;
+	    width: 90%;
+    display: inline-block!important;
+}
+ #pasoDos h3 { 
+    font-size: 22px; 
+    margin: 0 0 20px 0;
+}
+#pasoDos .campos .col-left {
+    border-right: 0px solid #CECECE;
+}
+#pasoDos .col-right, #pasoDos .btn-volver, #pasoDos input.btn-primary {
+	display: none;
+}
+#pasoDos #btn-continuar{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+}
+#pasoDos .btn-agregar{
+	width: 100%; 
+	margin: 0px;
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+}
+#pasoDos .col-resumen{
+	position: fixed;
+	left: 0px;
+	top: 85px;
+	z-index: 999;
+	width: 100%
+	}
+#pasoDos .box-resumen .top .item.activo .icon-ico-selec{
+	display: none;
+}
+#pasoDos .box-resumen .top .item.activo{
+	margin: 0 -10px 0 -20px;
+}
+#pasoDos .box-resumen { 
+    margin: 0 -15px;
+}
+#pasoDos  #btn-cerrar{
+	position: absolute;
+	display: block;
+	top: 18px;
+	right: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+	z-index: 999;
+	cursor: pointer;
+}
+#myModal .login, #imprime .login {
+    width: 100%;
+    }
+
+
+.principal .login.error::after{
+	top: 30px;
+}
+    footer { 
+    padding-top: 10px; }
+
+    .btn-carro{
+    	position: absolute;
+    	top: 30px;
+    	right: 90px;
+    	cursor: pointer;
+    }
+    .btn-carro i{
+	    color: #999;
+	    font-size: 27px;
+	}
+	.btn-carro span{
+		background: #E27C1E;
+		width: 18px;
+		height: 18px;
+		display: block;
+		position: 	absolute;
+		top: -10px;
+		padding-top: 1px;
+		right: -18px;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+		-moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+
+	}
+
+#pasoDos .campos .col-uso .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+    margin-left: 0px;
+}
+.col-resumen{
+	display: none;
+}
+
+.btn-carro{
+	display:none;
+}
+
+#pasoTres .box-resumen #tabla-pago td { 
+    vertical-align: top;
+}
+
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 236px;
+}
+.principal .datos { 
+    padding-top: 66px;
+    background-color: #3C7F97;
+	width: 1900px;
+    
+}
+
+  }
+
+
+
+
+@media (max-width: 538px) { 
+	.principal .login { 
+		top: 140px; 
+	}
+
+	#faq .central .item img {
+	    display: inline;
+	    margin-left: 10px;
+	    width: 120px;
+	    margin-top: 5px;
+	}
+	#faq .central .item p {
+	    font-size: 13px;
+	    width: 41%;
+	    padding-top: 22px;
+	}
+	#faq .central .trigger i { 
+	    margin-top: -3%;
+	}
+}
+
+@media (max-width: 325px) { 
+	 .principal .mensaje h3 strong { 
+	    font-size: 26px;
+	}
+}
+
+  

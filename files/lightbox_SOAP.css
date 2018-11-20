@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#img_desk img, #img_resp img {
+	width:100%;
+	height:auto;
+}
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+/*#paginas {
+	display:none;
+}*/
+
+#img_desk {
+	display:none;
+}
+	
+}
+
+@media only screen and (min-width:768px) {
+/*#paginas {
+	display:none;
+}*/
+
+#img_resp {
+	display:none;
+}
+	
+}

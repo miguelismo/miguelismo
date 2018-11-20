@@ -1,0 +1,318 @@
+@charset "UTF-8";
+main {
+	padding-top: 70px;
+}
+* {
+  font-family: 'helvetica', arial; }
+
+.promocion strong2 {
+      font-weight: bold;
+      font-size: 35px;
+      padding: 5px 0px 15px 0px;
+      display: inline-block; 
+}
+
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%; }
+
+.dropdown-toggle {
+  border: 0px;
+  border-radius: 0px;
+  height: 60px; }
+
+.navbar-toggle {
+  background: #000; }
+
+.placeholder {
+  color: #aaa; }
+
+.logos {
+  background: #f2f2f2;
+  padding: 60px 0px;
+  position: relative; }
+  .logos img {
+    margin: 0 39px; }
+
+.navbar-collapse {
+  z-index: 9999;
+  position: relative; }
+
+.cnt-pasos {
+  background: #333 url(../../img/cnt-slides-blur.jpg) center top no-repeat;
+  padding-top: 125px;
+  padding-bottom: 50px; 
+  }
+
+.principal {
+  height: 570px;
+  position: relative; }
+  .principal .bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1; 
+    background: #000;}
+  .principal .bxslider li {
+    padding-bottom: 50px; }
+  .principal .bx-wrapper .bx-pager {
+    margin-top: -30px; }
+  .principal .login {
+    width: 340px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 15px 15px 15px;
+    position: absolute;
+    margin-left: -170px;
+    left: 50%;
+    top: 78px;
+    z-index: 9001; }
+    .principal .login input {
+      width: 100%;
+      height: 60px;
+      background: #fff;
+      font-size: 16px;
+      border: 0px;
+      padding: 10px; }
+    .principal .login input.cotizar {
+      background: #009BDB;
+      text-transform: uppercase;
+      color: #fff;
+      margin-top: 10px; }
+    .principal .login input.cotizar:hover, .principal .login input.cotizar:active {
+      background: #e27c1e; }
+    .principal .login .bootstrap-select {
+      display: none;
+      margin-top: 10px; }
+  .principal .login.error::after {
+    content: "Ingresa patente válida";
+     position: absolute;
+    right: 25px;
+    top: 36px;
+    color: #AC453F;
+    font-size: 12px;
+    background: #F2DEDE;}
+    
+    .principal .login.errorPatentePagada::after {
+    content: "SOAP Pagado";
+     position: absolute;
+    right: 25px;
+    top: 36px;
+    color: #AC453F;
+    font-size: 12px;
+    background: #F2DEDE;}
+    
+   	.impPol .errorImp::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 36px;
+    color: #AC453F;
+    font-size: 12px; }
+  .principal .error #rutPatente {
+    background: #F2DEDE;
+	position: relative;
+	border: 3px solid #AD453F;}
+.principal .errorPatentePagada #rutPatente {
+    background: #F2DEDE;
+	position: relative;
+	border: 3px solid #AD453F;}
+   .errorImp #impPatente {
+    background: #F2DEDE;
+    border: 3px solid #AD453F;
+    position: relative; }
+  .principal ul {
+    padding: 0px;
+    margin: 0px; }
+  .principal .mensaje p {
+    background: #E27C1E;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px 0px;
+    width: 232px;
+    padding-left: 20px;
+    margin-top: 104px;
+    position: relative; }
+  .principal .mensaje p::before {
+    content: " ";
+    width: 500px;
+    height: 100%;
+    background: #E27C1E;
+    position: absolute;
+    left: -500px;
+    top: 0px;
+    display: block; }
+  .principal .mensaje h3 {
+    width: 330px;
+    font-size: 32px;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 10px; }
+    .principal .mensaje h3 strong {
+      font-size: 56px;
+      display: block; }
+  .principal .lista-vehiculos {
+    color: #fff;
+    list-style: none;
+    padding-top: 85px; }
+    .principal .lista-vehiculos li {
+      float: left;
+      list-style: none;
+      text-align: center;
+      width: 138px;
+      padding: 0 20px;
+      border-right: 1px solid #fff; }
+    .principal .lista-vehiculos li:first-child {
+      padding-left: 0px;
+      width: 118px; }
+    .principal .lista-vehiculos li:last-child {
+      border: 0px;
+      padding-right: 0px; }
+    .principal .lista-vehiculos i {
+      font-size: 60px;
+      display: block;
+      line-height: 0px;
+      margin-bottom: 10px; }
+    .principal .lista-vehiculos b {
+      font-size: 12px; }
+    .principal .lista-vehiculos p {
+      font-size: 12px; }
+    .principal .lista-vehiculos strong {
+      font-size: 24px; }
+  .principal .promocion::before {
+    content: " ";
+    width: 500px;
+    height: 100%;
+    background: rgba(226, 124, 30, 0.03);
+    position: absolute;
+    right: -500px;
+    top: 0px;
+    display: block; }
+  .principal .promocion {
+    background: #E27C1E;
+    width: 370px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 45px 0px 40px 50px;
+    color: #fff;
+    float: right;
+    margin-top: 55px;
+    position: relative; }
+    .principal .promocion b {
+      display: block; }
+    .principal .promocion p {
+      font-size: 28px;
+      line-height: 120%; }
+    .principal .promocion strong {
+      font-size: 64px;
+      padding: 5px 0px 15px 0px;
+      display: inline-block; }
+    .principal .promocion .bajada p {
+      font-size: 22px;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      padding: 10px 0px; }
+  .principal .datos {
+    width: 370px;
+    float: right;
+    color: #fff;
+    padding-top: 36px;
+    padding-left: 63px; }
+    .principal .datos div {
+      height: 65px;
+      margin-bottom: 15px; }
+    .principal .datos i {
+      font-size: 60px;
+      line-height: 0px;
+      display: block;
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px; }
+    .principal .datos a {
+      font-size: 16px;
+      color: #fff; }
+    .principal .datos p {
+      font-size: 16px;
+      color: #fff;
+      line-height: 167%; }
+      .principal .datos p strong {
+        font-size: 32px;
+        display: block; }
+    .principal .datos .modificar i {
+      margin-top: -9px; }
+    .principal .datos .telefono i {
+      margin-top: -9px; }
+  .principal .bx-viewport {
+    background: none; }
+
+/*NUEVO HOME*/    
+
+.home .login .bootstrap-select {
+      display: none;
+      margin-top: 10px; 
+      width:70%;
+      margin-left:15%;}
+.home .login .bootstrap-select .form-control{
+	margin-top:0px;
+}
+
+.home .login.error::after {
+    content: "Ingresa patente válida";
+    position: absolute;
+    right: 76.5%;
+    top: 200px;
+    color: #AC453F;
+    font-size: 11px;
+    background: #F2DEDE;}
+    
+.home .login.errorSinPatentes::after {
+    content: "No tienes seguros asociados";
+    position: absolute;
+    right: 76.5%;
+    top: 200px;
+    color: #AC453F;
+    font-size: 11px;
+    background: #F2DEDE;}
+
+.home .errorSinPatentes #rut {
+    background: #F2DEDE;
+	position: relative;
+	border: 3px solid #AD453F;}
+    
+.home .login.errorPatentePagada::after {
+    content: "SOAP Pagado";
+    position: absolute;
+    right: 76.5%;
+    top: 200px;
+    color: #AC453F;
+    font-size: 11px;
+    background: #F2DEDE;}
+    
+.home .errorPatentePagada #rutPatente {
+    background: #F2DEDE;
+	position: relative;
+	border: 3px solid #AD453F;}
+
+.home .login.errorValidaRut::after {
+    content: "Rut incorrecto";
+    position: absolute;
+    right: 76.5%;
+    top: 200px;
+    color: #AC453F;
+    font-size: 11px;
+    background: #F2DEDE;}
+    
+.home .errorValidaRut #rut {
+    background: #F2DEDE;
+	position: relative;
+	border: 3px solid #AD453F;}
+	
+.home .error #rutPatente {
+    background: #F2DEDE;
+	position: relative;
+	border: 3px solid #AD453F;}
+	
+.home .login input[type="text"]{
+    background: #fff;
+    font-size: 16px;
+    border: 0px;}
