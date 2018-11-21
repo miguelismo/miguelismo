@@ -418,8 +418,6 @@ i img {
 
 footer { padding-top: 0px }
 
-footer .container { width: 100% }
-
 footer .col-links { background: #0066ad }
 
 footer li a:link, footer li a:visited { color: #ffffff }
@@ -470,5 +468,10 @@ footer li a:hover, footer li a:active { color: #6dc3ff }
   #numero_emergencia_sc_L, #numero_emergencia_sc_R { width: 100% }
 
 }
-
+.imprimir_poliza {
+  text-align: center;
+}
+.imprimir_poliza a {
+  color: #fff;
+}
 /*/Rediseno */
