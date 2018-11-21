@@ -30,8 +30,8 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()"> <i class="material-icons">keyboard_backspace</i> Cotizar otra Patente </a> </li>
-          <li class="nav-item"> <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()" data-toggle="modal" data-target="#modal_preguntas"> <i class="material-icons">question_answer</i> Preguntas frecuentes </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="javascript:void(0)"> <i class="material-icons">keyboard_backspace</i> Cotizar otra Patente </a> </li>
+          <li class="nav-item"> <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#modal_preguntas"> <i class="material-icons">question_answer</i> Preguntas frecuentes </a> </li>
         </ul>
       </div>
     </div>
@@ -69,8 +69,8 @@
                 <div class="nav-tabs-navigation">
                   <div class="nav-tabs-wrapper">
                     <ul class="nav nav-tabs" data-tabs="tabs">
-                      <li class="nav-item nav_customizada"> <a class="nav-link active" href="#profile" data-toggle="tab"> <i class="material-icons">account_circle</i> Personal </a> </li>
-                      <li class="nav-item nav_customizada"> <a class="nav-link" href="#messages" data-toggle="tab"> <i class="material-icons">business</i> Comercial </a> </li>
+                      <li class="nav-item nav_customizada"> <a class="nav-link active" href="#profile" data-toggle="tab"> <i class="material-icons">account_circle</i><br class="visible_en_mobile">Personal </a> </li>
+                      <li class="nav-item nav_customizada"> <a class="nav-link" href="#messages" data-toggle="tab"> <i class="material-icons">business</i><br class="visible_en_mobile">Comercial </a> </li>
                     </ul>
                   </div>
                 </div>
@@ -87,7 +87,7 @@
 
                       <!-- Tab 1 -->
                       <div class="mi_acordion_tab_1_boton">
-                        <h4>1. Datos del dueño <i class="material-icons icono_titulo">person</i></h4>
+                        <h4>1. Datos del dueño <i class="material-icons icono_titulo visible_en_desktop">person</i></h4>
                         <div class="boton_editar boton_editar_1_1 txt_naranjo"><span class="badge badge-pill badge-secondary">Editar</span></div>
                       </div>
                       <div class="mi_acordion_tab_1_contenido">
@@ -148,14 +148,14 @@
 
                         </div>
                         <div class="contenedor_boton">
-                          <div class="btn btn-primary boton_continuar_1_1">CONTINUAR <i class="material-icons">arrow_forward</i></div>
+                          <button class="btn btn-primary boton_continuar_1_1" onClick="scrollToPasoDos()">CONTINUAR <i class="material-icons">arrow_forward</i></button>
                         </div>
                       </div>
                       <!--/Tab 1 -->
 
                       <!-- Tab 2 -->
                       <div class="mi_acordion_tab_2_boton">
-                        <h4>2. Datos del vehículo <i class="material-icons icono_titulo">directions_car</i></h4>
+                        <h4>2. Datos del vehículo <i class="material-icons icono_titulo visible_en_desktop">directions_car</i></h4>
                       </div>
                       <div class="mi_acordion_tab_2_contenido">
 
@@ -240,7 +240,7 @@
                         </div>
 
                         <div class="contenedor_boton">
-                          <div class="btn btn-primary boton_continuar_1_2">IR A MEDIO DE PAGO <i class="material-icons">arrow_forward</i></div>
+                          <button class="btn btn-primary boton_continuar_1_2">IR A MEDIO DE PAGO <i class="material-icons">arrow_forward</i></button>
                         </div>
 
                       </div>
@@ -257,7 +257,7 @@
 
                       <!-- Tab 1 -->
                       <div class="mi_acordion_tab_1_boton">
-                        <h4>1. Datos del dueño <i class="material-icons icono_titulo">person</i></h4>
+                        <h4>1. Datos del dueño <i class="material-icons icono_titulo visible_en_desktop">person</i></h4>
                         <div class="boton_editar boton_editar_1_1"><span class="badge badge-pill badge-secondary">Editar</span></div>
                       </div>
                       <div class="mi_acordion_tab_1_contenido">
@@ -303,14 +303,14 @@
 
                         </div>
                         <div class="contenedor_boton">
-                          <div class="btn btn-primary boton_continuar_1_1">CONTINUAR <i class="material-icons">arrow_forward</i></div>
+                          <button class="btn btn-primary boton_continuar_1_1" onClick="scrollToPasoDos()">CONTINUAR <i class="material-icons">arrow_forward</i></button>
                         </div>
                       </div>
                       <!--/Tab 1 -->
 
                       <!-- Tab 2 -->
                       <div class="mi_acordion_tab_2_boton">
-                        <h4>2. Datos del vehículo <i class="material-icons icono_titulo">directions_car</i></h4>
+                        <h4>2. Datos del vehículo <i class="material-icons icono_titulo visible_en_desktop">directions_car</i></h4>
                       </div>
                       <div class="mi_acordion_tab_2_contenido">
 
@@ -395,7 +395,7 @@
                         </div>
 
                         <div class="contenedor_boton">
-                          <div class="btn btn-primary boton_continuar_1_2">IR A MEDIO DE PAGO <i class="material-icons">arrow_forward</i></div>
+                          <button class="btn btn-primary boton_continuar_1_2">IR A MEDIO DE PAGO <i class="material-icons">arrow_forward</i></button>
                         </div>
 
                       </div>
@@ -616,6 +616,18 @@ Incapacidad Permanente: un año desde la fecha de emisión del certificado médi
 <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
 <script src="./assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
 <script src="./assets/js/layout.js" type="text/javascript"></script>
+  
+<!-- Scroll to (Para el boton continuar) -->
+<script>
+  function scrollToPasoDos() {
+      if ($('#nav-tabs').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('#nav-tabs').offset().top
+        }, 400);
+      }
+    }
+</script>
+<!--/Scroll to (Para el boton continuar) -->
 
 </body>
 </html>
