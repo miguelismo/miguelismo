@@ -92,6 +92,14 @@ $(document).ready(function(){
     
   });
   
+  // Ajuste telefono
+  $( "#inputTelefono" ).focusin(function() {
+    $( this ).val("+56");
+  });
+  $( "#inputTelefono" ).focusout(function() {
+    $( this ).val("");
+  });
+  
   // Transforma los select para mobile
   $("*[data-style='select-with-transition']").removeClass("selectpicker").addClass("btn-group bootstrap-select");
   
