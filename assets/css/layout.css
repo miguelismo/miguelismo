@@ -1,3 +1,7 @@
+/* General */
+html, body {
+  overflow-x: hidden !important;
+}
 /* HOME */
 .caja_banner {
 	background-color:rgba(43, 43, 43, .49);
