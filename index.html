@@ -23,7 +23,7 @@
 <script src="files/api.js" async="async" defer="defer"></script>
 <link href="files/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="files/icons.css" type="text/css" media="screen">
-<link rel="stylesheet" href="files/jquery.bxslider.css" type="text/css" media="screen">
+<!--link rel="stylesheet" href="files/jquery.bxslider.css" type="text/css" media="screen"-->
 <link rel="stylesheet" href="files/bootstrap-select.css" type="text/css" media="screen">
 <link href="files/main.css" rel="stylesheet">
 <link href="files/responsive.css" rel="stylesheet">
@@ -35,7 +35,7 @@
 <!-- FIN NUEVO HOME-->
 
 <!-- BANNER CON LOGO -->
-<link rel="stylesheet" href="files/layout.css" type="text/css" media="screen">
+<link rel="stylesheet" href="assets/css/layout.css" type="text/css" media="screen">
 <!--/BANNER CON LOGO -->
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -50,8 +50,7 @@
 
 <!-- SOAP PET FIN -->
 <meta http-equiv="keywords" content="Seguros, Paris, SOAP">
-<title>Seguros Cencosud | Seguro Obligatorio SOAP 2018</title>
-<script src="files/saved_resource"></script><script src="files/saved_resource(1)"></script>
+<title>Seguros Cencosud | Seguro Obligatorio SOAP 2019</title>
 <style>
 .navbar-fixed-bottom, .navbar-fixed-top {
   z-index: 1;
@@ -71,12 +70,17 @@ function home(){
 <header class="c-header">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 header_new">
         <div class="c-header__link"><a href="/vseg-paris/index.jsp"><img class="c-header__brand" src="http://www.seguroscencosud.cl/vseg-paris/img/seguros_cencosud-brand.png"></a></div>
-        <div class="c-header__sesion"><a id="btnLogin" class="c-header__btn c-header__btn--login" href="#loginModal">Iniciar Sesión</a> <a class="c-header__btn c-header__btn--help" href="/vseg-paris/html/preguntas_frecuentes.html">Te ayudamos</a></div>
+        <div class="c-header__sesion">
+          <a class="c-header__btn c-header__btn--help boton_imprimir" href="">Imprimir <br class="visible_en_mobile">Poliza</a>
+          <a class="c-header__btn c-header__btn--help" style="color: #555555" href="/vseg-paris/html/preguntas_frecuentes.html">Preguntas <br class="visible_en_mobile">Frecuentes</a>
+        </div>
         <div class="c-header__service"><span>Servicio al cliente</span><a href="tel:+5626005005000">600 500 5000</a></div>
+        <!--
         <div class="c-header__toogle"><a class="c-header__menu" id="menu-mobile" href="#" state="0"></a></div>
-        <div class="c-header__mobile-buttons" <a="" href="tel:6005005000"><i></i> <a class="c-header__btn-mobile c-header__btn-mobile--user" href="#loginModal"><i></i></a> </div>
+        <div class="c-header__mobile-buttons"> <a class="c-header__btn-mobile c-header__btn-mobile--user" href="#loginModal"><i></i></a> </div>
+        -->
     </div>
   </div>
   </div>
@@ -208,6 +212,7 @@ function home(){
                     <option value="2">Furgon</option>
                     <option value="32">Motocicleta</option>
                     <option value="19">Carro Arrastre</option>
+                    <option value="19">Mini Bus Particular</option>
                   </select>
                 </div>
                 <!--/Select --> 
@@ -232,8 +237,8 @@ function home(){
                 <!--input type="submit" class="btn_contratar naranjo" value="COTIZAR"-->
                 <div class="o-form__field o-form__field--actions boton_soap_naranjo">
                   <input class="o-btn o-btn--primary" id="cotizar" type="button" value="Cotizar">
+                  <input class="o-btn o-btn--primary imprimir_poliza" id="imprimir" type="button" value="Imprimir Poliza">
                 </div>
-                <div class="imprimir_poliza"><a href="javascript:void(0)">Inmprimir Poliza</a></div>
               </form>
             </div>
           </div>
@@ -245,29 +250,35 @@ function home(){
     <!-- 4 PROMO RESPONSIVE -->
     <section id="contenido_container_RESP">
       <section id="contenido_promo">
-        <article class="col_Promo"> <i><img src="images/i-auto.svg" alt=""></i>
+        <article class="col_Promo"> <i><img src="images/icono_auto.png" alt="" width="100%"></i>
           <h3>Auto, SW y Jeep<br>
             desde</h3>
-          <p>$5.990</p>
-          <div class="txt_puntos">5.000 PUNTOS</div>
+          <p>$5.990</p><div class="separador_o">&oacute;</div>
+          <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
         </article>
-        <article class="col_Promo"> <i><img src="images/i-camioneta.svg" alt=""></i>
+        <article class="col_Promo"> <i><img src="images/icono_camioneta.png" alt="" width="100%"></i>
           <h3>Camioneta y Furgon<br>
             desde</h3>
-          <p>$7.250</p>
-          <div class="txt_puntos">5.000 PUNTOS</div>
+          <p>$7.250</p><div class="separador_o">&oacute;</div>
+          <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
         </article>
-        <article class="col_Promo"> <i><img src="images/i-moto.svg" alt=""></i>
+        <article class="col_Promo"> <i><img src="images/icono_moto.png" alt="" width="100%"></i>
           <h3>Moto<br>
             desde</h3>
-          <p>$34.000</p>
-          <div class="txt_puntos">5.000 PUNTOS</div>
+          <p>$34.000</p><div class="separador_o">&oacute;</div>
+          <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
         </article>
-        <article class="col_Promo"> <i><img src="images/i-carro.svg" alt=""></i>
+        <article class="col_Promo"> <i><img src="images/icono_carro.png" alt="" width="100%"></i>
           <h3>Carro de arrastre<br>
             desde</h3>
-          <p>$3.200</p>
-          <div class="txt_puntos">5.000 PUNTOS</div>
+          <p>$3.200</p><div class="separador_o">&oacute;</div>
+          <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
+        </article>
+        <article class="col_Promo"> <i><img src="images/icono_van.png" alt="" width="100%"></i>
+          <h3>Mini Bus Particular<br>
+            desde</h3>
+          <p>$3.200</p><div class="separador_o">&oacute;</div>
+          <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
         </article>
       </section>
     </section>
@@ -386,44 +397,171 @@ function home(){
   <!-- 4 PROMO DESKTOP -->
   <section id="contenido_container_DESK">
     <section id="contenido_promo">
-      <article class="col_Promo"> <i><img src="images/i-auto.svg" alt=""></i>
+      <article class="col_Promo"> <i><img src="images/icono_auto.png" alt="" width="100%"></i>
         <h3>Auto, SW y Jeep <br>
           desde</h3>
-        <p>$5.990</p>
-        <div class="txt_puntos">5.000 PUNTOS</div>
+        <p>$5.990</p><div class="separador_o">&oacute;</div>
+        <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
       </article>
-      <article class="col_Promo"> <i><img src="images/i-camioneta.svg" alt=""></i>
+      <article class="col_Promo"> <i><img src="images/icono_camioneta.png" alt="" width="100%"></i>
         <h3>Camioneta y Furgon <br>
           desde</h3>
-        <p>$7.250</p>
-        <div class="txt_puntos">5.000 PUNTOS</div>
+        <p>$7.250</p><div class="separador_o">&oacute;</div>
+        <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
       </article>
-      <article class="col_Promo"> <i><img src="images/i-moto.svg" alt=""></i>
+      <article class="col_Promo"> <i><img src="images/icono_moto.png" alt="" width="100%"></i>
         <h3>Moto <br>
           desde</h3>
-        <p>$34.000</p>
-        <div class="txt_puntos">5.000 PUNTOS</div>
+        <p>$34.000</p><div class="separador_o">&oacute;</div>
+        <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
       </article>
-      <article class="col_Promo"> <i><img src="images/i-carro.svg" alt=""></i>
+      <article class="col_Promo"> <i><img src="images/icono_carro.png" alt="" width="100%"></i>
         <h3>Carro de arrastre <br>
           desde</h3>
-        <p>$3.200</p>
-        <div class="txt_puntos">5.000 PUNTOS</div>
+        <p>$3.200</p><div class="separador_o">&oacute;</div>
+        <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
+      </article>
+      <article class="col_Promo"> <i><img src="images/icono_van.png" alt="" width="100%"></i>
+        <h3>Mini Bus Particular <br>
+          desde</h3>
+        <p>$3.200</p><div class="separador_o">&oacute;</div>
+        <div class="txt_puntos"><div class="puntos_pesos">5.000</div>PUNTOS CENCOSUD</div>
       </article>
     </section>
   </section>
   <!-- FIN 4 PROMO DESKTOP --> 
-  
+
   <!-- EMERGENCIA CAMBIAR DATOS-->
   <section id="emergencia_sc">
-    <article id="numero_emergencia_sc_L"> <a href="https://www.seguroscencosud.cl/soap/redirect.do?html=/html/faq.html"><i class="icon-ico-movil"></i>
+  <!--div class="boton_modal">
+    <a href="#" data-toggle="modal" data-target="#modal_home" title="Ir a Imprimir Póliza">¿Que es el SOAP?</a>
+  </div-->
+    <article id="numero_emergencia_sc_L"> <a href="https://www.seguroscencosud.cl/soap/redirect.do?html=/html/faq.html"><i class="icon-ico-edit"></i>
       <p style="text-align: left;">Modifica los datos <br>
         de tu póliza</p>
       </a> </article>
-    <article id="numero_emergencia_sc_R"> <a href="tel://6005005000"><i class="icon-ico-edit"></i>
+    <article id="numero_emergencia_sc_R"> <a href="tel://6005005000"><i class="icon-ico-movil"></i>
       <p style="text-align: left;">Servicio al Cliente <br>
         <strong>600 500 5000</strong></p>
       </a> </article>
+    
+    <!--div class="boton_modal">
+    <a href="#" data-toggle="modal" data-target="#modal_home" title="Ir a Imprimir Póliza">¿Que es el SOAP?</a>
+  </div-->
+    
+  </section>
+  
+  <section id="info">
+    <!--+++++++PRUEBA TABS YENNY+++++++++++-->
+    <div class="u-bgwhite" style="padding-top: 40px">
+      <div class="container">
+
+    <div class="card card-nav-tabs card-plain">
+      <div class="card-header card-header-danger">
+        <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+        <div class="nav-tabs-navigation">
+          <div class="nav-tabs-wrapper">
+            <ul class="nav nav-tabs" data-tabs="tabs">
+              <li class="nav-item active">
+                <a class="nav-link" href="#que-es" data-toggle="tab">¿Que es SOAP?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cobertura" data-toggle="tab">Coberturas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#como-usar" data-toggle="tab">Como Usar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><div class="card-body ">
+      <div class="tab-content">
+        <div class="tab-pane active" id="que-es">
+          <br>
+          <p> El Seguro Obligatorio de Accidentes Personales (SOAP) lo deben tener si o si todos los
+            vehículos que circulan en Chile y debe ser contratado por el dueño del vehículo para poder pagar
+            su permiso de circulación. La vigencia de este seguro es del 1 abril al 31 de marzo del año siguiente.
+            ¡Cotiza el tuyo, contrata y accede a los beneficios de Seguros Cencosud!</p>
+        </div>
+        <div class="tab-pane" id="cobertura">
+          <br>
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <h4>¡Te diremos a que cubre!</h4>
+              <p>Cubre la muerte, incapacidad permanente y gastos médicos producto de lesiones sufridas a consecuencia
+                de accidentes de tránsito en que intervenga el vehículo asegurado, sus remolques o sus cargas.</p>
+              <h4>¡Te diremos a quienes cubre!</h4>
+              <p>Al conductor, las personas transportadas en el vehículo asegurado y cualquier tercero afectado en el
+                accidente. En caso de fallecimiento de alguno se pagará una indemnización a sus beneficiarios legales.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h4>¡Los Gastos Médicos cubiertos!</h4>
+              <ul style="text-align: left">
+                <li>Transporte sanitario</li>
+                <li>Hospitalización</li>
+                <li>Atención médica y quirúrgica</li>
+                <li>Dental, prótesis e implantes</li>
+                <li>Gastos farmacéuticos </li>
+                <li>Gastos por concepto de rehabilitación de las víctimas</li>
+                <li>Atención pre hospitalaria</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <div class="table-responsive">
+                <table class="table table-striped" style="text-align: left">
+                  <thead>
+                  <tr>
+                    <th>Coberturas</th>
+                    <th>Montos</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Fallecimiento</td>
+                    <td>300 UF</td>
+                  </tr>
+                  <tr>
+                    <td>Incapacidad Permanente Total</td>
+                    <td>300 UF</td>
+                  </tr>
+                  <tr>
+                    <td>Incapacidad Permanente Parcial</td>
+                    <td>200 UF</td>
+                  </tr>
+                  <tr>
+                    <td>Gastos Médicos y hospitalarios</td>
+                    <td>300 UF</td>
+                  </tr>
+                  </tbody>
+                </table>
+                <p>Estas coberturas no son acumulables y por ejemplo en caso de que se hubiera pagado una
+                  indemnización por un tipo de incapacidad y luego la persona falleciera o cambiara su tipo de
+                  incapacidad solo se pagará hasta un máximo de 300 UF.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane" id="como-usar">
+          <br>
+          <h4>Aunque no queremos que lo uses… ¡Te enseñamos como usarlo!</h4>
+          <ul>
+            <li>Estampar la denuncia en alguna entidad de carabineros con todos los hechos.</li>
+            <li>El plazo para presentar el siniestro es de 1 año.</li>
+            <li>Debe presentarse la solicitud en las oficinas de la aseguradora, adjuntando Certificado otorgado por el Tribunal competente o el Ministerio Público para el cobro del SOAP.</li>
+          </ul>
+          <ul>
+            <li>En caso de muerte: certificado de defunción del fallecido y libreta de familia u otro documento que acredite legalmente la calidad de beneficiario.</li>
+            <li>En caso de incapacidad permanente: certificado otorgado por el médico tratante que acredite la incapacidad (naturaleza y grado).</li>
+            <li>En caso de gastos médicos: comprobantes de pago de los gastos, junto con órdenes de exámenes o tratamientos y recetas de medicamentos.</li>
+          </ul>
+      </div>
+    </div>
+    </div>
+          </div>
+      </div>
+  <!--++++++++++  FIN TABS +++++++++-->
+    
   </section>
   <!-- FIN EMERGENCIA CAMBIAR DATOS --> 
   <!-- FIN CONTENIDO NUEVO HOME --> 
@@ -567,37 +705,103 @@ function home(){
 </style>
 
 <!-- IMPRIME POLIZA -->
-<div class="modal fade" id="imprime">
+<div class="modal fade" id="modal_home">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title">Imprime tu Póliza</h4>
+        <h4 class="modal-title">¿Que es el SOAP?</h4>
       </div>
       <div class="modal-body">
-        <div class="login">
-          <div class="impPol">
-            <p>Si compraste tu póliza y deseas imprimirla, ingresa la patente de tu vehículo</p>
-            <form id="poliza_form">
-              <!-- id="toPaso2" -->
               
-              <input id="impPatente" name="patente" type="text" maxlength="6" placeholder="Ingresa patente">
-              <input type="hidden" name="g-recaptcha-response-1" id="g-recaptcha-response-1" value="true">
-              <div class="g-recaptcha" style="margin-top: 20px;" data-sitekey="6Ld9ARUTAAAAAAkrHBRvrB_eTcMhJVDJBmDY5goB">
-                <div style="width: 304px; height: 78px;">
-                  <div>
-                    <iframe src="files/anchor.html" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
-                  </div>
-                  <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
+              <!-- Contenido Acordion -->
+              
+              <div class="row">
+                <div class="col-12">
+                  <h4>¡Ahora sabrás lo que es el SOAP!</h4>
+                  <p>El Seguro Obligatorio de Accidentes Personales (SOAP) lo deben tener si o si todos los vehículos que circulan en Chile y debe ser contratado por el dueño del vehículo para poder pagar su permiso de circulación. La vigencia de este seguro es del 1 abril al 31 de marzo del año siguiente. ¡Cotiza el tuyo, contrata y accede a los beneficios de Seguros Cencosud!</p>
                 </div>
               </div>
-              <div class="g-recaptcha" style="margin-top: 20px;" id="r2"></div>
-              <input id="boton_ingresar" name="submit" value="Descargar" type="button" class="cotizar">
-            </form>
-          </div>
-        </div>
-        <div id="mensaje_container"></div>
-        <p class="nota">Para ver la póliza descargada necesitas Acrobat Reader. <a target="_blank" href="http://get.adobe.com/es/reader/">Descárgalo Acá</a></p>
+              <div class="row" style="margin-top: 5px">
+                <div class="col-12">
+                  <h4>¡Ahora Sabrás lo que cubre tu SOAP!</h4>
+                  <p>Cubre la muerte, incapacidad permanente y gastos médicos producto de lesiones sufridas a consecuencia de accidentes de tránsito en que intervenga el vehículo asegurado, sus remolques o sus cargas.</p>
+                  <p>¿tienes dudas de los gastos médicos que cubre? ¡Te damos más detalles!</p>
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <ul style="margin-top: 0px; margin-bottom: 0px">
+                        <li>Transporte sanitario</li>
+                        <li>Hospitalización</li>
+                        <li>Atención médica y quirúrgica</li>
+                        <li>Dental, prótesis e implantes</li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <ul style="margin-top: 0px; margin-bottom: 0px">
+                        <li>Gastos farmacéuticos </li>
+                        <li>Gastos por concepto de rehabilitación de las víctimas</li>
+                        <li>Atención pre hospitalaria</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 20px">
+                <div class="col-12">
+                  <h4>¡Te diremos a quienes cubre!</h4>
+                  <p>Al conductor, las personas transportadas en el vehículo asegurado y cualquier tercero afectado en el accidente. En caso de fallecimiento de alguno se pagará una indemnización a sus beneficiarios legales.</p>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Coberturas</th>
+                          <th>Montos</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Fallecimiento</td>
+                          <td>300 UF</td>
+                        </tr>
+                        <tr>
+                          <td>Incapacidad Permanente Total</td>
+                          <td>300 UF</td>
+                        </tr>
+                        <tr>
+                          <td>Incapacidad Permanente Parcial</td>
+                          <td>200 UF</td>
+                        </tr>
+                        <tr>
+                          <td>Gastos Médicos y hospitalarios</td>
+                          <td>300 UF</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Estas coberturas no son acumulables y por ejemplo en caso de que se hubiera pagado una indemnización por un tipo de incapacidad y luego la persona falleciera o cambiara su tipo de incapacidad solo se pagará hasta un máximo de 300 UF.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <h4>Aunque no queremos que lo uses… ¡Te enseñamos como usarlo!</h4>
+                  <ul>
+                    <li>Estampar la denuncia en alguna entidad de carabineros con todos los hechos.</li>
+                    <li>El plazo para presentar el siniestro es de 1 año.</li>
+                    <li>Debe presentarse la solicitud en las oficinas de la aseguradora, adjuntando Certificado otorgado por el Tribunal competente o el Ministerio Público para el cobro del SOAP.</li>
+                  </ul>
+                  <ul>
+                    <li>En caso de muerte: certificado de defunción del fallecido y libreta de familia u otro documento que acredite legalmente la calidad de beneficiario.</li>
+                    <li>En caso de incapacidad permanente: certificado otorgado por el médico tratante que acredite la incapacidad (naturaleza y grado).</li>
+                    <li>En caso de gastos médicos: comprobantes de pago de los gastos, junto con órdenes de exámenes o tratamientos y recetas de medicamentos.</li>
+                  </ul>
+                </div>
+              
+              <!--/Contenido Acordion --> 
+              
+            </div>
+      </div>
+      <div class="modal-footer">
+        
       </div>
     </div>
     <!-- /.modal-content --> 
@@ -605,50 +809,6 @@ function home(){
   <!-- /.modal-dialog --> 
 </div>
 
-<!-- Modal 1 -->
-<div class="modal fade" id="modaluno" style="text-align: center">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <img style="padding-top: 10px" src="https://www.seguroscencosud.cl/vseg-paris/img/seguros_cencosud-brand.png"/> </div>
-      <div class="modal-body">
-        <p><b>SOAP:</b><br>
-          Póliza	de	Seguro	Obligatorio	de	Accidentes	Personales	(SOAP),	POL	320130487. Intermedia	CAT	Corredores	de	Seguros	y	Servicios	S.A.	Riesgo	es	cubierto	por	la	compañía aseguradora	según	las	condiciones	generales	incorporadas	al	Depósito	de	la Superintendencia	de	Valores	y	Seguros.	Infórmese	de	los	precios	de	este	seguro	según	el tipo	de	vehículo	en www.seguroscencosud.cl.<br>
-          <br>
-          <b>Campaña 48	horas:</b><br>
-          Precios	indicados	tienen	vigencia	durante	el	07	y	08	de	marzo	del	2018.</p>
-      </div>
-      <div class="modal-footer" style="text-align: center">
-        <button style="border: 1px solid #ccc" type="button" class="btn btn-default" onClick="window.open('https://www.seguroscencosud.cl/vseg-paris/Bases/2018/marzo/legal_48hrs.pdf','Legal')">Ver Bases</button>
-        <button style="border: 1px solid #ccc" type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!--/Modal 1 --> 
-
-<!-- Modal 2 -->
-<div class="modal fade" id="modaldos">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title">Titulo 2</h4>
-      </div>
-      <div class="modal-body"> Cuerpo del Modal 2 </div>
-    </div>
-  </div>
-</div>
-<!--/Modal 2 -->
-
-<!--div class="cargando">
-  <img src="files/ajax-loader.gif" class="hidden-xs">
-  <strong class="hidden-xs" style="left: 45%;position: relative;top: 47%;margin: -32px 0 0 -32px;">Estamos buscando la información de su vehículo...</strong><br>
-  <strong class="hidden-xs" style="left: 45%;position: relative;top: 47%;margin: -32px 0 0 -32px;">Espere un momento.</strong>
-  <strong class="visible-xs" style="position: relative;top: 47%; font-size:12px; margin-left:15%;">Estamos buscando la información de su vehículo...</strong>
-  <strong class="visible-xs" style="position: relative;top: 47%; font-size:12px; margin-left:35%;">Espere un momento.</strong>
-</div-->
 
 <!-- Bootstrap core JavaScript
     ================================================== --> 
@@ -669,7 +829,7 @@ function home(){
 <script src="files/ie10-viewport-bug-workaround.js"></script> 
 <script type="text/javascript" src="files/jquery.tmas.keytext.js"></script> 
 <script type="text/javascript" src="files/jquery.soap.imprimir.poliza.js"></script> 
-<script type="text/javascript" id="" src="files/js"></script> 
+<script type="text/javascript" id="" src="files/js"></script>
 
 </body>
 </html>
