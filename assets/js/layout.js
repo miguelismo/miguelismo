@@ -101,7 +101,7 @@ $(document).ready(function(){
   });
   
   // Transforma los select para mobile
-  $("*[data-style='select-with-transition']").removeClass("selectpicker").addClass("btn-group bootstrap-select");
+  $("*[data-style='select-with-transition']").removeClass("selectpicker").addClass("btn-group bootstrap-select select_para_mobile");
   
 
 });
