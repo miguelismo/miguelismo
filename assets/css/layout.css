@@ -1365,6 +1365,23 @@ list-style: none;
 .botones_pago_con_puntos .btn {
   min-width: 130px;
 }
+.select_para_mobile {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  padding: 14px 0px 3px 0px;
+  color: #495057;
+  background: url("../../images/select_mobile_fondo.png") no-repeat right #fff;
+}
+
+
+
+
+
+
+
 
 
 
