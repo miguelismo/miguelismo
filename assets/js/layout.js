@@ -93,10 +93,10 @@ $(document).ready(function(){
   });
   
   // Ajuste telefono
-  $( "#inputTelefono" ).focusin(function() {
+  $( ".inputTelefono" ).focusin(function() {
     $( this ).val("+56");
   });
-  $( "#inputTelefono" ).focusout(function() {
+  $( ".inputTelefono" ).focusout(function() {
     $( this ).val("");
   });
   
