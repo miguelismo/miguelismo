@@ -47,5 +47,54 @@ $(document).ready(function(){
     $(this).find("span").slideToggle("fast");
     $(this).find("i").toggleClass("rota_ico_180");
   });
+  
+  // Acordion en Exito
+  
+  $(".contenido_acordion").delay(500).slideDown();
+  
+  $(".texto_inactivo, .acordion_icono").click(function() {
+    
+    if ($(".acordion").hasClass("acordion_inactivo")) {
+      $(".contenido_acordion").slideDown();
+      $(".texto_inactivo span").animate({opacity: 0}, 400, function() {});
+      $(".contenido_acordion").animate({opacity: 1}, 400, function() {});
+    } else {
+      $(".contenido_acordion").slideUp();
+      $(".texto_inactivo span").animate({opacity: 1}, 400, function() {});
+      $(".contenido_acordion").animate({opacity: 0}, 400, function() {});
+    }
+    $(".acordion").toggleClass("acordion_inactivo");
+    $(".acordion_icono").toggleClass("rota_ico_45");
+    
+  });
+  
+  // Abre acordion en paso 3
+  
+  $(".abre_acordion").click(function() {
+    $(".acordion_paso_3").slideDown();
+    
+    $("html, body").animate({
+      scrollTop: $('.acordion_paso_3').offset().top
+    }, 400);
+    
+  });
+  
+  $(".cierra_acordion").click(function() {
+    $(".acordion_paso_3").slideUp();
+  });
+  
+  // Para que en el paso 1 con alerta de patente, funcion para que al hacer click en los botones vaya al mensaje
+  $(".huincha_disable").click(function() {
+    
+    $("html, body").animate({
+      scrollTop: $('body').offset().top
+    }, 400);
+    
+  });
+  
+  // Transforma los select para mobile
+  $("*[data-style='select-with-transition']").removeClass("selectpicker").addClass("btn-group bootstrap-select");
+  
 
 });
+
